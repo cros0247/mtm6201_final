@@ -16,15 +16,238 @@
 </head>
 <body>
     <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                    <a class="nav-link active col-3" aria-current="page" href="index.html"><img src="images/istockphoto-1253761926-612x612.jpg" alt="leaf" width="50px" height="auto"></a>
+                    <a class="nav-link col-3" href="#"> <i class="bi bi-bell"></i></a>                            
+                    <a class="nav-link col-3" href="#"><i class="bi bi-chat"></i></a>         
 
+            <!-- Burger -->
+              <button class="navbar-toggler col-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Security Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Patient Information</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="finances-page.html">Finances</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="scheduling-page.html">Department Scheduling</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="stats-page.html">Department Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="index.html">Sign Out</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <!-- Burger -->
+            </div>
+          </nav>
     </header>
 
     <main>
+        <div class="dropdown deptselect">
+            <button class="btn btn-primary dropdown-toggle rounded-0 border-2 border-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Department
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Surgery</a></li>
+              <li><a class="dropdown-item" href="#">Clinic</a></li>
+              <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+              <li><a class="dropdown-item" href="#">Facilites</a></li>
+              <li><a class="dropdown-item" href="#">Management</a></li>
+              <li><a class="dropdown-item" href="#">Nursing</a></li>
+            </ul>
+        </div>
+
+        <h1 class="pageheading m-3">Nursing Scheduling</h1>
+
+        <section class="sect1">
+
+          <div class="dates">
+            <div>
+              <div class="dropdown border-bottom border-5 border-primary">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Day
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Monday</a></li>
+                  <li><a class="dropdown-item" href="#">Tuesday</a></li>
+                  <li><a class="dropdown-item" href="#">Wednesday</a></li>
+                  <li><a class="dropdown-item" href="#">Thursday</a></li>
+                  <li><a class="dropdown-item" href="#">Friday</a></li>
+                  <li><a class="dropdown-item" href="#">Saturday</a></li>
+                  <li><a class="dropdown-item" href="#">Sunday</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown border-bottom border-5 border-primary">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Week
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Week 1</a></li>
+                  <li><a class="dropdown-item" href="#">Week 2</a></li>
+                  <li><a class="dropdown-item" href="#">Week 3</a></li>
+                  <li><a class="dropdown-item" href="#">Week 4</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown border-bottom border-5 border-primary">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Month
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">January</a></li>
+                  <li><a class="dropdown-item" href="#">February</a></li>
+                  <li><a class="dropdown-item" href="#">March</a></li>
+                  <li><a class="dropdown-item" href="#">April</a></li>
+                  <li><a class="dropdown-item" href="#">May</a></li>
+                  <li><a class="dropdown-item" href="#">June</a></li>
+                  <li><a class="dropdown-item" href="#">July</a></li>
+                  <li><a class="dropdown-item" href="#">August</a></li>
+                  <li><a class="dropdown-item" href="#">September</a></li>
+                  <li><a class="dropdown-item" href="#">October</a></li>
+                  <li><a class="dropdown-item" href="#">November</a></li>
+                  <li><a class="dropdown-item" href="#">December</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown border-bottom border-5 border-primary">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Year
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">2019</a></li>
+                  <li><a class="dropdown-item" href="#">2020</a></li>
+                  <li><a class="dropdown-item" href="#">2021</a></li>
+                  <li><a class="dropdown-item" href="#">2022</a></li>
+                  <li><a class="dropdown-item" href="#">2023</a></li>
+                  <li><a class="dropdown-item" href="#">2024</a></li>
+                  <li><a class="dropdown-item" href="#">2025</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="calendar">
+            <table class="table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Sun</th>
+                  <th scope="col">Mon</th>
+                  <th scope="col">Tue</th>
+                  <th scope="col">Wed</th>
+                  <th scope="col">Thu</th>
+                  <th scope="col">Fri</th>
+                  <th scope="col">Sat</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row"></th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <th scope="row">28</th>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+
+        </section> 
+
+        <section class="sect2">
+            <h3 class="pageheading mt-3">Message Department Head for Scheduling</h3>
+            <div class="contact">
+                <form action="#">
+                 <label for="fullname" class="form-label">Full Name</label>
+                 <input type="text" class="form-control rounded-0 border-dark" name="fullname" id="fullname" placeholder="Name">
+   
+                 <label for="email" class="form-label">Email</label>
+                 <input type="email" class="form-control rounded-0 border-dark" name="email" id="email" placeholder="Email">
+
+                 <label for="time" class="form-label">Time</label>
+                 <input type="text" class="form-control rounded-0 border-dark" name="fullname" id="time" placeholder="time">
+   
+                 <label for="message" class="form-label">Message</label>
+                 <textarea class="form-control rounded-0 border-dark" name="message" id="message" cols="20" rows="5" placeholder="Message"></textarea>
+   
+                 <button class="btn btn-primary text-dark border-2 border-dark px-3 py-2 mt-2">Send</button>
+                </form>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-
+        <p>Copyirght &copy; 2024</p>       
+        <div class="profile"> 
+            <div>
+                <p>Jane Doe</p>
+                <p>Administrator</p>
+            </div>
+            <i class="bi bi-person-square"></i>
+        </div>
     </footer>
         <!-- Bootstrap Java -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
