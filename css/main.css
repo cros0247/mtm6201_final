@@ -142,11 +142,16 @@ p {
     text-align: center;
 }
 
-/* Main content of Fiances page */
-.sect1 {
+.sect2 {
+    background-color: #FFFDE6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: solid 3px #16302B;
     border-bottom: solid 3px #16302B;
 }
 
+/* Main content of Fiances page */
 .dates {
     display: flex;
     flex-direction: row;
@@ -155,37 +160,20 @@ p {
     margin-bottom: 1rem;
 }
 
-
 /* CALENDAR */
 .calendar {
     margin: 5%;
 }
 
-.table {
-    padding: 0%;
-}
-
 td, th {
-    width: 12.8%;
+    width: 10%;
     height: 50px;
 }
-
 /* END OF CALENDAR */
-
-
-.sect2 {
-    background-color: #FFFDE6;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .contact {
     margin: 5%;
 }
-
-
-
 
 /* All page footers */
 footer {
