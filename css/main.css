@@ -1,0 +1,191 @@
+/* Colors */
+/*
+color: #16302B; - dark green
+color: #B0EED8; - light green
+color: #FFFDE6; - yellow
+color: #3EB489; - green 
+*/
+
+/* Bootstrap Css */
+:root, 
+[data-bs-theme=dark], 
+[data-bs-theme=light] { 
+    --bs-primary: #B0EED8;
+    --bs-primary-rgb: 177, 238, 216;
+    --bs-secondary: #3eb489;
+    --bs-secondary-rgb: 62, 180, 137;
+    --cs-primary-dark: #3EB489;
+    --cs-primary-dark-rgb: 62, 180, 137;
+
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-secondary);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-primary {
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+
+    --bs-btn-hover-color: var(--bs-dark);
+    --bs-btn-hover-bg: var(--cs-primary-dark);
+    --bs-btn-hover-border-color: var(--cs-primary-dark);
+
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: none;
+}
+
+/* End of Bootstrap Css */
+
+/* Custom Css */
+p {
+    margin: 0px;
+}
+
+.test  {
+    height: 300px;
+}
+
+
+/* Home Page Main Contend */
+.banner {
+    background: url(../images/bg-photo-1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px #16302B;
+}
+
+.headerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 314px;
+    height: 158px;
+    margin: 5%;
+
+    background-color: white;
+    border-radius: 15px;
+    border: solid #16302B 3px;
+}
+
+.homebuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.bttn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bttn a {
+    width: 100%;
+}
+
+/* BS Icon */
+.bi-chat, .bi-bell {
+    font-size: 2rem;
+}
+
+
+
+/* Navbars */
+.navbar {
+    border-bottom: solid 3px #16302B;
+}
+.nav-link {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-body-tertiary {
+    background-color: #3EB489 !important;
+}
+
+.offcanvas {
+    background-color: #3EB489;
+}
+
+.offcanvas a, .navbar-nav .nav-link.active, .offcanvas-header {
+    color: white;
+}
+
+
+/* Drop down Dept selector */
+.dropdown {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Main content of Fiances page */
+.sect1 {
+    border-bottom: solid 3px #16302B;
+}
+
+.sect2 {
+    background-color: #FFFDE6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact {
+    margin: 5%;
+}
+
+
+
+/* All page footers */
+footer {
+    background-color: #16302B;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 1rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    text-align: end;
+}
+
+/* BS icon */
+.bi-person-square {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+
+/* End of Custom Css */
+
